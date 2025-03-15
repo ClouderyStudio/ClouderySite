@@ -32,8 +32,6 @@ import {
   ]
 
 export function Navigate() {
-  const pathname = usePathname()
-
   return (
       <NavigationMenu>
       <NavigationMenuList>

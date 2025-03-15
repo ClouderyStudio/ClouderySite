@@ -11,7 +11,7 @@ export function Clock() {
   useEffect(() => {
     const updateClock = () => {
       const currentTime = new Date()
-      let hrs = currentTime.getHours()
+      const hrs = currentTime.getHours()
       const mins = currentTime.getMinutes()
       const secs = currentTime.getSeconds()
  
