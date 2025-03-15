@@ -1,5 +1,7 @@
 import { Clock } from "@/components/clock";
 import { HoverEffectBackground } from "@/components/hovereffect";
+import { TypingText } from "@/components/typingtext";
+
 export default function Page() {
   return (
     <HoverEffectBackground darkbackground="#1e293b" lightbackground="#f1f5f9">
@@ -7,7 +9,12 @@ export default function Page() {
 bg-[size:44px_44px]">
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Clock/>
-        <h1 className="text-4xl font-bold text-center sm:text-left">Cloudery</h1>
+        <TypingText
+        text="云术工作室"
+        waitTime={2000}
+        alwaysVisibleCount={0}
+        className="text-5xl font-bold text-gradient"
+      />
         <ol className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             欢迎来到这里，休息一下吧。或使用导航栏开始探索。
