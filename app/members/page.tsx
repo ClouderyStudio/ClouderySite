@@ -1,4 +1,3 @@
-import { HoverEffectBackground } from "@/components/hovereffect";
 import Image from "next/image";
 
 export default function Team() {
