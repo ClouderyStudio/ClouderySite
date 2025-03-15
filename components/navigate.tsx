@@ -16,42 +16,19 @@ import {
     navigationMenuTriggerStyle,
   } from "@/components/ui/navigation-menu"
 
-  const components: { title: string; href: string; description: string }[] = [
+  const servers: { title: string; href: string; description: string }[] = [
     {
-      title: "Alert Dialog",
-      href: "/docs/primitives/alert-dialog",
+      title: "竹像素",
+      href: "https://zhuxs.cn",
       description:
-        "A modal dialog that interrupts the user with important content and expects a response.",
+        "一个互通的、最新版本的纯净MC服务器。",
     },
     {
-      title: "Hover Card",
-      href: "/docs/primitives/hover-card",
+      title: "悦灵工坊",
+      href: "#",
       description:
-        "For sighted users to preview content available behind a link.",
-    },
-    {
-      title: "Progress",
-      href: "/docs/primitives/progress",
-      description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-      title: "Scroll-area",
-      href: "/docs/primitives/scroll-area",
-      description: "Visually or semantically separates content.",
-    },
-    {
-      title: "Tabs",
-      href: "/docs/primitives/tabs",
-      description:
-        "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-      title: "Tooltip",
-      href: "/docs/primitives/tooltip",
-      description:
-        "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
+        "(即将推出)一个 NeoForge 模组服务器。",
+    }
   ]
 
 export function Navigate() {
@@ -69,7 +46,7 @@ export function Navigate() {
       </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>主站</NavigationMenuTrigger>
+          <NavigationMenuTrigger>云术</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -80,51 +57,46 @@ export function Navigate() {
                   >
                     <Icons.logo className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      云术工作室
+                        云术工作室官网
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      本工作室。
+                      也就是本站。不知道在这里写点甚么，随便写写凑数好了。
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="https://doc.cldery.com" title="文档站">
+                里面是我们的文档。
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="https://x8.pw" title="导航站">
+                包含了我们的所有项目。
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>其他</NavigationMenuTrigger>
+          <NavigationMenuTrigger>MC服务器</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {servers.map((server) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={server.title}
+                  title={server.title}
+                  href={server.href}
                 >
-                  {component.description}
+                  {server.description}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/*
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="https://krcp.cldery.com" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              <b>麒麟合作社</b>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        */}
       </NavigationMenuList>
     </NavigationMenu>
   )

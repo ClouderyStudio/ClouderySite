@@ -12,7 +12,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-
+        <title>云术工作室 | ClouderyStudio</title>
+        <meta charSet="utf-8" />
       </head>
       <body>
     <div data-wrapper="" className="border-grid flex flex-1 flex-col min-h-svh bg-background font-sans antialiased">
