@@ -24,7 +24,7 @@ export function SiteHeader() {
                 className="h-8 w-8 px-0"
               >
                 <Link
-                  href="github"
+                  href="https://github.com/ClouderyStudio"
                   target="_blank"
                   rel="noreferrer"
                 >
