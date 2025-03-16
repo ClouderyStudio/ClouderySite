@@ -13,9 +13,7 @@ export function SiteHeader() {
           <Navigate />
           </div>
           <div className="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
-            <div className="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
-              {/* What is this? */}
-            </div>
+            <div className="hidden w-full flex-1 md:flex md:w-auto md:flex-none" />
             <nav className="flex items-center gap-0.5">
               <Button
                 asChild

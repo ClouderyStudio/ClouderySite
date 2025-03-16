@@ -152,10 +152,10 @@ function CursorWrapper({
   }, [])
 
   if (!visible || (!on && !waiting)) {
-    return null // 确保返回的是 null 而不是 undefined
+    return null
   }
 
-  return <>{children}</> // 返回有效的 JSX 元素
+  return <>{children}</>
 }
 
 function Type({

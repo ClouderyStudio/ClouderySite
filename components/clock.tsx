@@ -21,10 +21,10 @@ export function Clock() {
       setAmPm(hrs < 12 ? "AM" : "PM")
     }
  
-    updateClock() // initial call to set clock immediately
-    const interval = setInterval(updateClock, 1000) // update every second
+    updateClock()
+    const interval = setInterval(updateClock, 1000)
  
-    return () => clearInterval(interval) // cleanup on component unmount
+    return () => clearInterval(interval)
   }, [])
  
   return (
