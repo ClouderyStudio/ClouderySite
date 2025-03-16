@@ -1,6 +1,7 @@
 import { Clock } from "@/components/clock";
 import { HoverEffectBackground } from "@/components/hovereffect";
 import { TypingText } from "@/components/typingtext";
+import { get } from "@/lib/utils";
 
 export default function Page() {
   return (
@@ -16,8 +17,11 @@ bg-[size:44px_44px]">
         className="text-5xl font-bold text-gradient"
       />
         <ol className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
+        <li className="mb-2 tracking-[-.01em]">
             欢迎来到这里，休息一下吧。或使用导航栏开始探索。
+          </li>
+          <li className="mb-2 tracking-[-.01em]">
+            {get("https://v1.hitokoto.cn").then((res) => res.hitokoto + " ——" + res.from)}
           </li>
         </ol>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
