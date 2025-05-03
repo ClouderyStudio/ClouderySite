@@ -14,3 +14,7 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  output: 'export', // 强制静态导出
+};
