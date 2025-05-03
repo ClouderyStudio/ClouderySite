@@ -9,5 +9,5 @@ routes = [
     { pattern = "cldery.com", zone_name = "cldery.com", custom_domain = true }
 ]
 
-[assets]
-directory = "."
+[pages]
+pages_build_output_dir = "out"
