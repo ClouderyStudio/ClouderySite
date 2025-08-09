@@ -56,7 +56,7 @@ export function Navigate() {
                         云术工作室官网
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      也就是本站。不知道在这里写点甚么，随便写写凑数好了。
+                      也就是本站,作为用户的指引和信息提供网站。
                     </p>
                   </a>
                 </NavigationMenuLink>
